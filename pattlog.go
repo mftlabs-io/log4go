@@ -56,7 +56,7 @@ func FormatLogRecord(format string, rec *LogRecord) string {
 	}
 
 	out := bytes.NewBuffer(make([]byte, 0, 64))
-	secs := rec.Created.UnixNano() / 1e9
+	secs := rec.Created.UnixNano() / 1e6
 
 	cache := getFormatCache()
 	if cache.LastUpdateSeconds != secs {
