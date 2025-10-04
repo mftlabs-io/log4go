@@ -1,4 +1,5 @@
-# This is an unmaintained fork, left only so it doesn't break imports.
+# This version has been modified to work with the amf logger
+# and should not be called directly.
 
 Please see http://log4go.googlecode.com/
 
